@@ -15,8 +15,12 @@
 }
 
 @theme {
-    --color-c-grayish-blue: var(--Grayish-Blue);
+    --color-c-Grayish-blue: var(--Grayish-Blue);
     --color-c-Light-Grayish-Blue: var(--Light-Grayish-Blue);
     --color-c-Desaturated-Dark-Blue: var(--Desaturated-Dark-Blue);
     --color-c-Very-Dark-Grayish-Blue: var(--Very-Dark-Grayish-Blue);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
 }
