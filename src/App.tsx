@@ -15,18 +15,18 @@ function App() {
     }
     return (
         <main className="w-full min-h-screen flex justify-center items-center bg-c-Light-Grayish-Blue">
-            <div className="w-9/10 rounded-xl overflow-hidden">
+            <div className="w-9/10 max-w-250 rounded-xl  md:flex md:h-80 lg:h-90">
                 <img
                     src={drawers}
                     alt="image of a green drawer"
-                    className="h-50 w-full object-cover"
+                    className="h-50 w-full object-cover rounded-t-lg md:h-full md:w-82 md:rounded-l-xl md:rounded-t-[unset] lg:w-95 lg:object-left"
                 />
-                <article className="px-9 pt-8 pb-4 bg-white relative">
-                    <h1 className="font-bold text-c-Very-Dark-Grayish-Blue text-base mb-4">
+                <article className="px-9 pt-8 pb-4 bg-white relative rounded-b-lg md:rounded-b-[unset] md:rounded-r-xl flex flex-col justify-between lg:px-12 lg:pt-10 lg:pb-8">
+                    <h1 className="font-bold text-c-Very-Dark-Grayish-Blue text-base mb-4 lg:text-2xl ">
                         Shift the overall look and feel by adding these
                         wonderful touches to furniture in your home
                     </h1>
-                    <p className="font-bold text-[0.8125rem] text-c-Desaturated-Dark-Blue mb-8">
+                    <p className="font-bold text-[0.8125rem] text-c-Desaturated-Dark-Blue mb-8 lg:text-base lg:mb-10">
                         Ever been in a room and felt like something was missing?
                         Perhaps it felt slightly bare and uninviting. I’ve got
                         some simple tips to help you make any room feel
@@ -51,13 +51,16 @@ function App() {
                         </div>
                         <button
                             type="button"
-                            className={`${shareAct ? "bg-c-Grayish-blue" : "bg-c-Light-Grayish-Blue"} w-8 h-8 flex justify-center items-center rounded-full cursor-pointer`}
+                            className={`${shareAct ? "bg-c-Very-Dark-Grayish-Blue" : "bg-c-Light-Grayish-Blue"} w-8 h-8 flex justify-center items-center rounded-full cursor-pointer md:z-50`}
                             onClick={toggleShare}
                         >
-                            <img src={share} alt="share icon" />
+                            <img
+                                src={shareAct ? shareWhite : share}
+                                alt="share icon"
+                            />
                         </button>
                         <div
-                            className={` ${shareAct ? "" : "hidden"} absolute bg-c-Very-Dark-Grayish-Blue w-full h-16 left-0 bottom-0 px-9 flex items-center gap-5`}
+                            className={` ${shareAct ? "" : "hidden"} absolute bg-c-Very-Dark-Grayish-Blue w-full h-16 left-0 bottom-0 px-9 flex items-center gap-5 rounded-b-lg md:rounded-lg  md:justify-center md:w-60 md:left-[unset] md:right-0 md:bottom-30 md:before:absolute md:before:w-8 md:before:h-8 md:before:right-8 md:before:-bottom-9.5 md:before:border-20 md:before:border-l-transparent md:before:border-r-transparent md:before:border-b-transparent md:before:border-t-c-Very-Dark-Grayish-Blue lg:before:right-[unset] lg:-right-12 `}
                         >
                             <p className="uppercase text-c-Grayish-blue text-xs tracking-[0.4rem]">
                                 Share
@@ -69,7 +72,7 @@ function App() {
                             </div>
                             <button
                                 type="button"
-                                className="bg-c-Grayish-blue w-8 h-8 flex justify-center items-center rounded-full z-50 cursor-pointer ms-auto"
+                                className="bg-c-Grayish-blue w-8 h-8 flex justify-center items-center rounded-full z-50 cursor-pointer ms-auto md:hidden"
                                 onClick={toggleShare}
                             >
                                 <img src={shareWhite} alt="share icon" />

@@ -24,3 +24,10 @@
 body {
     font-family: "Manrope", sans-serif;
 }
+
+.hanging__menu::before {
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
