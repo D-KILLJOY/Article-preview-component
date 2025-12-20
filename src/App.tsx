@@ -15,18 +15,18 @@ function App() {
     }
     return (
         <main className="w-full min-h-screen flex justify-center items-center bg-c-Light-Grayish-Blue">
-            <div className="w-9/10 max-w-250 rounded-xl  md:flex md:h-80 lg:h-90">
+            <div className="w-9/10 max-w-250 rounded-xl  md:flex md:h-80 xl:h-90 ">
                 <img
                     src={drawers}
                     alt="image of a green drawer"
-                    className="h-50 w-full object-cover rounded-t-lg md:h-full md:w-82 md:rounded-l-xl md:rounded-t-[unset] lg:w-95 lg:object-left"
+                    className="h-50 w-full object-cover rounded-t-lg md:h-full md:w-82 md:rounded-l-xl md:rounded-t-[unset] xl:w-95 xl:object-left"
                 />
-                <article className="px-9 pt-8 pb-4 bg-white relative rounded-b-lg md:rounded-b-[unset] md:rounded-r-xl flex flex-col justify-between lg:px-12 lg:pt-10 lg:pb-8">
-                    <h1 className="font-bold text-c-Very-Dark-Grayish-Blue text-base mb-4 lg:text-2xl ">
+                <article className="px-9 pt-8 pb-4 bg-white relative rounded-b-lg md:rounded-b-[unset] md:rounded-r-xl flex flex-col justify-between xl:px-12 xl:pt-10 xl:pb-8">
+                    <h1 className="font-bold text-c-Very-Dark-Grayish-Blue text-base mb-4 xl:text-3xl ">
                         Shift the overall look and feel by adding these
                         wonderful touches to furniture in your home
                     </h1>
-                    <p className="font-bold text-[0.8125rem] text-c-Desaturated-Dark-Blue mb-8 lg:text-base lg:mb-10">
+                    <p className="font-bold text-[0.8125rem] text-c-Desaturated-Dark-Blue mb-8 xl:text-lg xl:mb-10">
                         Ever been in a room and felt like something was missing?
                         Perhaps it felt slightly bare and uninviting. I’ve got
                         some simple tips to help you make any room feel
@@ -34,13 +34,13 @@ function App() {
                     </p>
 
                     <div className="flex justify-between items-center ">
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 xl:gap-6">
                             <img
-                                className="w-12.5 h-12.5 rounded-full"
+                                className="w-12.5 h-12.5 rounded-full xl:h-15 xl:w-15"
                                 src={user}
                                 alt="profile photo of Michelle Appleton"
                             />
-                            <div className="text-[0.8125rem] ">
+                            <div className="text-[0.8125rem] xl:text-base">
                                 <h2 className="text-c-Very-Dark-Grayish-Blue font-bold">
                                     Michelle Appleton
                                 </h2>
@@ -51,7 +51,7 @@ function App() {
                         </div>
                         <button
                             type="button"
-                            className={`${shareAct ? "bg-c-Very-Dark-Grayish-Blue" : "bg-c-Light-Grayish-Blue"} w-8 h-8 flex justify-center items-center rounded-full cursor-pointer md:z-50`}
+                            className={`${shareAct ? "bg-c-Very-Dark-Grayish-Blue" : "bg-c-Light-Grayish-Blue"} w-8 h-8 flex justify-center items-center rounded-full cursor-pointer md:z-50 xl:w-10 xl:h-10`}
                             onClick={toggleShare}
                         >
                             <img
@@ -60,12 +60,12 @@ function App() {
                             />
                         </button>
                         <div
-                            className={` ${shareAct ? "" : "hidden"} absolute bg-c-Very-Dark-Grayish-Blue w-full h-16 left-0 bottom-0 px-9 flex items-center gap-5 rounded-b-lg md:rounded-lg  md:justify-center md:w-60 md:left-[unset] md:right-0 md:bottom-30 md:before:absolute md:before:w-8 md:before:h-8 md:before:right-8 md:before:-bottom-9.5 md:before:border-20 md:before:border-l-transparent md:before:border-r-transparent md:before:border-b-transparent md:before:border-t-c-Very-Dark-Grayish-Blue lg:before:right-[unset] lg:-right-12 `}
+                            className={` ${shareAct ? "" : "hidden"} absolute bg-c-Very-Dark-Grayish-Blue w-full h-16 left-0 bottom-0 px-9 flex items-center gap-5 rounded-b-lg md:rounded-lg  md:justify-center md:w-60 md:left-[unset] md:right-0 md:bottom-30 md:before:absolute md:before:w-8 md:before:h-8 md:before:right-8 md:before:-bottom-9.5 md:before:border-20 md:before:border-l-transparent md:before:border-r-transparent md:before:border-b-transparent md:before:border-t-c-Very-Dark-Grayish-Blue xl:before:right-[unset] xl:-right-22 xl:w-80 xl:h-18 xl:rounded-xl`}
                         >
-                            <p className="uppercase text-c-Grayish-blue text-xs tracking-[0.4rem]">
+                            <p className="uppercase text-c-Grayish-blue text-xs tracking-[0.4rem] xl:text-base">
                                 Share
                             </p>
-                            <div className="flex gap-4">
+                            <div className="flex gap-4 xl:gap-6 ">
                                 <img src={facebook} alt="facebook logo" />
                                 <img src={twitter} alt="twitter logo" />
                                 <img src={pintrest} alt="pintrest logo" />
